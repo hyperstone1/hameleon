@@ -7,7 +7,6 @@
     .container {
       .navbar-toggler {
         // position: fixed;
-
       }
       .navbar-brand {
         color: white;
@@ -55,13 +54,14 @@
   }
 }
 
+
 .offcanvas-body {
   display: flex;
   flex-direction: row;
   // background-color: rgb(255, 255, 255);
   .menu {
     justify-content: center;
-    width: 50%;
+    // width: 50%;
     margin: 0 auto;
   }
 
@@ -90,6 +90,13 @@
     &:hover::after {
       width: 100%;
       left: 0;
+      box-shadow: 0 1px 10px 4px rgb(255 16 39 / 50%);
+    }
+  }
+  .navbar-nav {
+    .nav-link.active {
+      color: rgb(149, 54, 238);
+      border-bottom: 1px solid #e3e3e3;
     }
   }
 }

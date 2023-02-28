@@ -1,6 +1,9 @@
 @import url('./index.scss');
 
 @media (width < 992px) {
+  .offcanvas {
+    max-width: 260px !important;
+  }
   .offcanvas-body {
     display: flex;
     flex-direction: column;
