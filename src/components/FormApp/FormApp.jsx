@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import './media.scss';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { AiFillInstagram } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
-import axios from 'axios';
+// import axios from 'axios';
 import Swal from 'sweetalert2';
-import { host } from '../../constants/constants';
+// import { host } from '../../constants/constants';
 import Spinner from 'react-bootstrap/Spinner';
-// import 'react-phone-number-input/style.css';
-// import Input from 'react-phone-number-input/input';
 import InputMask from '../InputMask/InputMask';
 
 // type Error = {
@@ -25,6 +23,7 @@ const FormApp = () => {
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
+  const inputPhone = useRef();
 
   const handleChangeInput = (e) => {
     console.log(e.target.type);
@@ -70,7 +69,6 @@ const FormApp = () => {
     } else {
       setLoading(true);
       try {
-        setPhone();
         const maskPhone = '+375' + phone;
         // const { data } = await axios.post(`${host}/api/send_mail`, {
         //   name,
@@ -91,6 +89,7 @@ const FormApp = () => {
           text: response,
         });
       }
+      inputPhone.current.value = '';
       setName('');
       setPhone('');
       setMessage('');
@@ -133,7 +132,13 @@ const FormApp = () => {
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Ваш телефон</Form.Label>
               <span className={errors.tel ? 'mask_err mask' : 'mask'}>+375</span>
-              <InputMask phone={phone} setPhone={setPhone} errors={errors} />
+              <InputMask
+                phone={phone}
+                setPhone={setPhone}
+                errors={errors}
+                setErrors={setErrors}
+                inputPhone={inputPhone}
+              />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Задайте нам вопрос</Form.Label>

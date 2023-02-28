@@ -1,16 +1,16 @@
 export const imgsWorks = [
   {
-    src: './imgs/1.jpg',
+    src: './imgs/1.JPG',
     title: 'RAI - 45x35 см',
     url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
   },
   {
-    src: './imgs/2.jpg',
+    src: './imgs/2.JPG',
     title: 'Lucky Pub - 29х43 см',
     url: 'https://www.instagram.com/p/CbW9tA_MaE-/',
   },
   {
-    src: './imgs/3.jpg',
+    src: './imgs/3.JPG',
     title: 'LA LUNA - 75х75 см',
     url: 'https://www.instagram.com/p/Cn7MmUlIfLb/',
   },
@@ -20,7 +20,7 @@ export const imgsWorks = [
     url: 'https://www.instagram.com/p/CpAYmwCIX3B/',
   },
   {
-    src: './imgs/5.jpg',
+    src: './imgs/5.JPG',
     title: 'LA LUNA - 75х75 см',
     url: 'https://www.instagram.com/p/Cbe7cl0Mwj2/',
   },
