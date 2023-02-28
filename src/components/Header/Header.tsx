@@ -26,7 +26,7 @@ const Header = () => {
                 <Nav.Link href="#form_app">Оставить заявку</Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link>+375 (33) 333-33-33</Nav.Link>
+                <Nav.Link href='tel:+375333333333'>+375 (33) 333-33-33</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

@@ -165,7 +165,7 @@ const FormApp = () => {
           </Form>
         </div>
         <div className="cards_container">
-          <a href="tel:375336633538" className="card phone container">
+          <a href="tel:375333333333" className="card phone container">
             <div className="dark"></div>
             <div className="icon">
               <BsFillTelephoneFill />
