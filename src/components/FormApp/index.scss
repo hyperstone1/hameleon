@@ -18,7 +18,7 @@
       position: relative;
       width: 500px;
       padding: 35px 25px;
-      box-shadow: 0 30px 45px -15px rgb(255 16 39 / 57%);
+      box-shadow: 0 30px 75px -15px rgb(255 16 39 / 64%);
       border-radius: 15px;
       form {
         display: flex;
@@ -39,6 +39,8 @@
           border-color: #492252;
           &:hover {
             background-color: #492252;
+            box-shadow: rgba(255 16 39 / 64%) 0px 2px 4px 0px,
+              rgba(255 16 39 / 64%) 0px 2px 16px 0px;
           }
         }
 
