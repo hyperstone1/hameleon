@@ -1,0 +1,49 @@
+.header {
+  .bg-dark {
+    background-color: rgba(var(--bs-dark-rgb), 0.1) !important;
+  }
+  .navbar-expand-lg {
+    font-family: 'Tilt Prism';
+    .container {
+      .navbar-brand {
+        color: white;
+        padding: 7px;
+        background-color: #cb12122e;
+        box-shadow: rgb(204 3 3) 0px 3px 8px;
+        border-radius: 3px;
+      }
+      .navbar-collapse {
+        flex-grow: 0;
+        font-family: 'Roboto Condensed';
+        font-size: 20px;
+      }
+      .navbar-nav {
+        font-family: 'Roboto Condensed';
+
+        gap: 15px;
+        .nav-link {
+          position: relative;
+          color: white;
+          transition: all 0.2s;
+          &:hover {
+            cursor: pointer;
+          }
+          &::after {
+            position: absolute;
+            content: '';
+            width: 0%;
+            height: 1px;
+            background-color: white;
+            bottom: 0;
+            right: 0;
+            transition: width 0.2s;
+          }
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
