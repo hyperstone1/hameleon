@@ -1,0 +1,118 @@
+@import url('./index.scss');
+
+@media (width < 1200px) {
+  .process {
+    padding-top: 70px;
+    .container_process {
+      //   flex-direction: column-reverse;
+      img {
+        width: 50%;
+      }
+      .text {
+        ol {
+          padding: 0;
+        }
+        &::after {
+          height: 75%;
+          left: 16px;
+        }
+        .process_item {
+          .process_number {
+            width: 35px;
+            height: 35px;
+            font-size: 12px;
+            span {
+              font-size: 13px;
+            }
+          }
+          .process__body {
+            h4 {
+              font-size: 22px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 900px) {
+  .process {
+    padding-top: 70px;
+    .container_process {
+      flex-direction: column-reverse;
+      img {
+        width: 80%;
+      }
+      .text {
+        ol {
+          padding: 0;
+        }
+        &::after {
+          height: 75%;
+          left: 16px;
+        }
+        .process_item {
+          .process_number {
+            width: 35px;
+            height: 35px;
+            font-size: 12px;
+            span {
+              font-size: 13px;
+            }
+          }
+          .process__body {
+            h4 {
+              font-size: 22px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 481px) {
+  .process {
+    padding-top: 70px;
+    .container_process {
+      flex-direction: column-reverse;
+      img {
+        width: 80%;
+      }
+      .text {
+        ol {
+          padding: 0;
+        }
+        &::after {
+          height: 75%;
+          left: 12px;
+        }
+        .process_item {
+          .process_number {
+            width: 25px;
+            height: 25px;
+            font-size: 12px;
+            span {
+              font-size: 13px;
+            }
+          }
+          .process__body {
+            h4 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

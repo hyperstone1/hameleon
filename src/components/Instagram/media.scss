@@ -1,0 +1,82 @@
+@import url('./index.scss');
+
+@media (width < 1300px) {
+  .instagram {
+    .instagram_container {
+      width: 50%;
+      .title {
+        font-size: 22px;
+      }
+      .description {
+        font-size: 16px;
+      }
+      .follow_btn {
+        justify-content: left;
+        gap: 15px;
+        height: 50px;
+        .inst {
+          width: 50px;
+          svg {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .follow_btn__text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (width < 800px) {
+  .instagram {
+    .instagram_container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 60px 0px;
+      .follow_btn {
+        height: 40px;
+        .inst {
+          width: 40px;
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 481px) {
+  .instagram {
+    margin-top: 150px;
+    .instagram_container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 60px 0px;
+      .title {
+        font-size: 20px;
+      }
+      .description {
+        font-size: 15px;
+      }
+      .follow_btn {
+        justify-content: left;
+        gap: 15px;
+        height: 40px;
+        .inst {
+          width: 30px;
+          svg {
+            width: 15px;
+            height: 15px;
+          }
+        }
+        .follow_btn__text {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

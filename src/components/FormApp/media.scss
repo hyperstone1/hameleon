@@ -1,0 +1,62 @@
+@import url('./index.scss');
+
+@media (width < 900px) {
+  .form_app {
+    padding-top: 70px;
+    .form {
+      margin-top: 0;
+      flex-direction: column;
+      gap: 50px;
+      .form_container {
+        width: 70%;
+        margin: 0 auto;
+      }
+      .cards_container {
+        width: 80%;
+        margin: 0 auto;
+        .card {
+          padding: 10px;
+          gap: 5px;
+          .icon {
+          }
+          .title {
+            font-size: 15px;
+          }
+          .text {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 481px) {
+  .form_app {
+    .form {
+      margin-top: 0;
+      flex-direction: column;
+      gap: 50px;
+      .form_container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .cards_container {
+        width: 80%;
+        margin: 0 auto;
+        .card {
+          padding: 10px;
+          gap: 5px;
+          .icon {
+          }
+          .title {
+            font-size: 11px;
+          }
+          .text {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

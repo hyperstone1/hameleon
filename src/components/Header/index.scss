@@ -5,12 +5,20 @@
   .navbar-expand-lg {
     font-family: 'Tilt Prism';
     .container {
+      .navbar-toggler {
+        // position: fixed;
+
+      }
       .navbar-brand {
         color: white;
         padding: 7px;
         background-color: #cb12122e;
         box-shadow: rgb(204 3 3) 0px 3px 8px;
         border-radius: 3px;
+        .logo {
+          width: 25px;
+          height: 25px;
+        }
       }
       .navbar-collapse {
         flex-grow: 0;
@@ -19,7 +27,6 @@
       }
       .navbar-nav {
         font-family: 'Roboto Condensed';
-
         gap: 15px;
         .nav-link {
           position: relative;
@@ -44,6 +51,45 @@
           }
         }
       }
+    }
+  }
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: row;
+  // background-color: rgb(255, 255, 255);
+  .menu {
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .nav-link {
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 15px;
+    font-family: 'Roboto Condensed';
+    &:hover {
+      cursor: pointer;
+      color: rgb(149, 54, 238);
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0%;
+      height: 1px;
+      background-color: rgb(255, 255, 255);
+      bottom: 0;
+      right: 0;
+      transition: width 0.2s;
+    }
+    &:hover::after {
+      width: 100%;
+      left: 0;
     }
   }
 }

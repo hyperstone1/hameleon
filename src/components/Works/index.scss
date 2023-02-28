@@ -12,21 +12,26 @@
     .card {
       overflow: hidden;
       transition: all 0.2s;
-      .card-img-top {
-        width: 100%;
-        max-height: 400px;
-        object-fit: cover;
-        transition: all 0.4s;
-        cursor: pointer;
+      .card-link {
+        .card-img-top {
+          width: 100%;
+          max-height: 400px;
+          object-fit: cover;
+          transition: all 0.4s;
+          cursor: pointer;
+        }
+        .card-body {
+          position: absolute;
+          top: 0;
+          color: white;
+        }
       }
-      .card-body {
-        position: absolute;
-      }
+
       &:hover {
         box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca,
           0 0 40px #0ba9ca, 0 0 50px #0ba9ca;
         .card-img-top:hover {
-          transform: scale(1.2);
+          transform: scale(1.1);
         }
       }
     }

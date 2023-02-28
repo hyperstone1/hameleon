@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './media.scss';
 import { BsInstagram } from 'react-icons/bs';
 
 const Instagram = () => {
@@ -13,13 +13,15 @@ const Instagram = () => {
         <span className="description">
           Ознакомьтесь с некоторыми из наших последних работ и другими замечательными работами
           неона, чтобы вдохновиться. Подписывайтесь на нас за новостями и специальными предложениями
-          #neonpopsicle
+          #neon.hameleon
         </span>
         <button className="follow_btn">
           <div className="inst">
             <BsInstagram />
           </div>
-          <span className='follow_btn__text'>Подписывайтесь на инстаграм @neon.hameleon</span>
+          <a href="https://www.instagram.com/neon.hameleon.by/" rel="noreferrer" target={'_blank'}>
+            <span className="follow_btn__text">Подписывайтесь на инстаграм @neon.hameleon</span>
+          </a>
         </button>
       </div>
     </div>

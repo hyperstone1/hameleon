@@ -1,0 +1,31 @@
+@import url('./index.scss');
+
+@media (width < 992px) {
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: space-between;
+    padding: 45px !important;
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  .header .navbar-expand-lg .container .navbar-toggler {
+    position: fixed;
+    right: 7px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(188 215 255 / 62%);
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

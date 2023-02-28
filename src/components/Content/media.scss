@@ -1,0 +1,72 @@
+@import url('index.scss');
+
+@media (width < 1201px) {
+  .open {
+    font-size: 4rem;
+
+    padding: 2rem 3rem 2.5rem;
+  }
+  .content .open_container .container {
+    h1 {
+      font-size: 34px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (width < 901px) {
+  .content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column-reverse;
+    .open_container {
+      margin-top: 10px;
+      .container {
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+    img {
+      margin: 0 auto;
+      margin-top: 30px;
+      width: 60%;
+    }
+  }
+}
+
+@media (width < 481px) {
+  .content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column-reverse;
+    .open_container {
+      margin-top: 10px;
+      .container {
+        margin: 0 auto;
+
+        h1 {
+          font-size: 24px;
+        }
+        span {
+          font-size: 13px;
+        }
+      }
+    }
+    img {
+      margin: 0 auto;
+      margin-top: 30px;
+      width: 80%;
+    }
+  }
+  .open {
+    font-size: 2rem;
+    padding: 1rem 2rem 1.5rem;
+  }
+}
