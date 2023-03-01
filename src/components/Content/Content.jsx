@@ -1,16 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
-// import './index.scss';
+import React, { useEffect, useRef } from 'react';
 import './open.scss';
 import './media.scss';
 import Typed from 'typed.js';
 
 const Content = () => {
   const textRef = useRef(null);
-  var i = 0;
-  var speed = 50; /* Скорость/длительность эффекта в миллисекундах */
-
-  // setInterval каждые 2 секунды выполняет функцию
-  // функция берет строку, делает split, потом
 
   useEffect(() => {
     const typed = new Typed(textRef.current, {
