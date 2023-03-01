@@ -50,9 +50,18 @@
       margin-top: 10px;
       .container {
         margin: 0 auto;
-
-        h1 {
-          font-size: 24px;
+        margin-top: 20px;
+        max-width: 350px;
+        .title {
+          h1 {
+            font-size: 24px;
+            .text {
+              font-size: 24px;
+            }
+            .typed-cursor {
+              font-size: 24px;
+            }
+          }
         }
         span {
           font-size: 13px;

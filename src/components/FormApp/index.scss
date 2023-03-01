@@ -85,35 +85,35 @@
           .phone {
             padding-left: 60px;
           }
-          .placeholder_input {
-            position: absolute;
-            top: 12px;
-            left: 20px;
-            transition: all 0.2s;
-            font-size: 18px;
-            color: #fff;
-          }
-          .placeholder_focus {
-            display: block;
-            position: absolute;
-            top: -12px;
-            left: 14px;
-            padding: 0 5px;
-            border-radius: 6px;
-            background: white;
-            transition: all 0.2s;
-            color: #000000;
-            font-size: 16px;
-            z-index: 111;
-          }
-          .placeholder_focus > .form-control::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 2px;
-            top: 0;
-            left: 10px;
-          }
+          // .placeholder_input {
+          //   position: absolute;
+          //   top: 12px;
+          //   left: 20px;
+          //   transition: all 0.2s;
+          //   font-size: 18px;
+          //   color: #fff;
+          // }
+          // .placeholder_focus {
+          //   display: block;
+          //   position: absolute;
+          //   top: -12px;
+          //   left: 14px;
+          //   padding: 0 5px;
+          //   border-radius: 6px;
+          //   background: white;
+          //   transition: all 0.2s;
+          //   color: #000000;
+          //   font-size: 16px;
+          //   z-index: 111;
+          // }
+          // .placeholder_focus > .form-control::after {
+          //   content: '';
+          //   position: absolute;
+          //   width: 20px;
+          //   height: 2px;
+          //   top: 0;
+          //   left: 10px;
+          // }
         }
       }
     }
@@ -137,6 +137,7 @@
         background: transparent;
         border-radius: 10px;
         text-decoration: none;
+        transition: 0.2s;
         cursor: pointer;
         .icon {
           width: 35px;
