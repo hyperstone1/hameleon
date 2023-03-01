@@ -1,42 +1,54 @@
-.marks_container {
-  /* list-style: none; */
-  padding-bottom: 50px;
-  height: 100%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  animation-duration: 36.675s;
-  animation-timing-function: linear;
-  animation-name: animMarks;
-  .t1003__item {
+.marks {
+  overflow: hidden;
+  .marks_container {
+    list-style: none;
+    height: 100%;
+    padding-bottom: 70px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    gap: 40px;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-negative: 0;
+    flex-grow: 1;
     -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
-    max-height: 100%;
-    white-space: nowrap;
-    pointer-events: all;
-    -webkit-transform: translateZ(0);
-    .t-text {
-      position: relative;
-      padding: 0 10px;
-      color: #ffffff;
-      font-size: 20px;
-      font-family: 'Arial';
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-duration: 36.675s;
+    animation-name: animMarks;
+    box-sizing: content-box !important;
+    .t1003__item {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 40px;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-negative: 0;
+      -webkit-flex-shrink: 0;
+      flex-shrink: 0;
+      max-height: 100%;
+      white-space: nowrap;
+      pointer-events: all;
+      -webkit-transform: translateZ(0);
+      .t-text {
+        padding: 0 10px;
+        color: #ffffff;
+        font-size: 20px;
+        font-family: 'Arial';
+        line-height: 1.55;
+        white-space: nowrap;
+        pointer-events: all;
+        list-style: none;
+        font-weight: 300;
+      }
     }
   }
 }
@@ -47,7 +59,7 @@
     -webkit-transform: translateX(0px);
   }
   100% {
-    transform: translateX(-1467px);
-    -webkit-transform: translateX(-1467px);
+    transform: translateX(-1780px);
+    -webkit-transform: translateX(-1780px);
   }
 }
