@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import { Form } from 'react-bootstrap';
 
 const InputMask = ({ phone, setPhone, errors, setErrors, inputPhone }) => {
-  //   const [card, setCard] = useState();
-
   const handleChange = () => {
     const cardValue = inputPhone.current.value
       .replace(/\D/g, '')
@@ -25,9 +23,6 @@ const InputMask = ({ phone, setPhone, errors, setErrors, inputPhone }) => {
 
   useEffect(() => {
     handleChange();
-    console.log(errors);
-    console.log(!phone.match(/^(29|25|44|33)(\d{3})(\d{2})(\d{2})$/));
-    // eslint-disable-next-line
   }, [phone]);
 
   return (
@@ -40,7 +35,6 @@ const InputMask = ({ phone, setPhone, errors, setErrors, inputPhone }) => {
         isInvalid={!!errors.tel}
       />
       <Form.Control.Feedback type="invalid">{errors.tel}</Form.Control.Feedback>
-      {/* <input type="text" /> */}
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 import './media.scss';
+import logo from '../../assets/images/logo-removebg.png';
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <Navbar collapseOnSelect bg="dark" expand="lg">
         <Container>
           <Navbar.Brand href="#home">
-            <img className="logo" src={require('./logo-removebg-preview.png')} alt="logo" />
+            <img className="logo" src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Offcanvas id="offcanvasNavbar" tabIndex="" placement="end" restoreFocus={false}>
@@ -20,9 +21,9 @@ const Header = () => {
                 <Nav.Link href="#reviews">Отзывы</Nav.Link>
                 <Nav.Link href="#form_app">Оставить заявку</Nav.Link>
               </Nav>
-              <Nav>
+              {/* <Nav>
                 <Nav.Link href="tel:+375333333333">+375 (33) 333-33-33</Nav.Link>
-              </Nav>
+              </Nav> */}
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

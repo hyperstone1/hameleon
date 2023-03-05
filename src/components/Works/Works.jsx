@@ -14,7 +14,7 @@ const Works = () => {
               <Col key={idx}>
                 <Card>
                   <Card.Link href={item.url} target="_blank">
-                    <Card.Img variant="top" src={require(`${item.src}`)} />
+                    <Card.Img variant="top" src={item.src} />
                     <Card.Body>
                       <Card.Title>{item.title}</Card.Title>
                     </Card.Body>

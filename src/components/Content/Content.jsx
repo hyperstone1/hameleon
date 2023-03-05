@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import './open.scss';
 import './media.scss';
 import Typed from 'typed.js';
+import backImg from '../../assets/images/hameleon6.jpg';
 
 const Content = () => {
   const textRef = useRef(null);
@@ -18,8 +18,6 @@ const Content = () => {
       showCursor: true,
       cursorChar: '|',
     });
-
-    // Destropying
     return () => {
       typed.destroy();
     };
@@ -27,7 +25,7 @@ const Content = () => {
 
   return (
     <div className="content">
-      <img src={require('./hameleon6.jpg')} alt={'neon.hameleon'} />
+      <img src={backImg} alt={'neon.hameleon'} />
       <div className="open_container">
         <h1 className="open">welcome</h1>
         <div className="container">

@@ -8,6 +8,7 @@ import Reviews from './components/Reviews/Reviews';
 import FormApp from './components/FormApp/FormApp';
 import Footer from './components/Footer/Footer';
 import Marks from './components/Marks/Marks';
+import { AiOutlineArrowUp } from 'react-icons/ai';
 
 function App() {
   const btnRef = useRef(null);
@@ -26,8 +27,8 @@ function App() {
   }
 
   function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
   }
 
   return (
@@ -42,7 +43,7 @@ function App() {
       <Marks />
       <Footer />
       <button className="btn-top" ref={btnRef} onClick={topFunction}>
-        🡹
+        <AiOutlineArrowUp />
       </button>
     </div>
   );

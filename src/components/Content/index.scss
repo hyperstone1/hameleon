@@ -3,9 +3,9 @@
   position: relative;
   width: 100%;
   justify-content: center;
+  margin-top: 30px;
   gap: 70px;
   img {
-    margin-top: 50px;
     mix-blend-mode: lighten;
     transform: scale(-1, 1);
     width: 45%;
@@ -42,8 +42,6 @@
             white-space: nowrap;
             overflow: hidden;
             color: #d95454;
-            // border-right: 4px solid rgb(255, 255, 255);
-            // animation: printed-text 5s steps(16), flashin-border 0.75s step-start infinite;
           }
           .typed-cursor {
             font-size: 44px;
@@ -151,22 +149,3 @@
     }
   }
 }
-// @keyframes flashin-border {
-//   0% {
-//     border-color: rgb(255, 255, 255);
-//   }
-
-//   50% {
-//     border-color: transparent;
-//   }
-
-//   100% {
-//     border-color: rgb(255, 255, 255);
-//   }
-// }
-
-// @keyframes printed-text {
-//   from {
-//     width: 0%;
-//   }
-// }

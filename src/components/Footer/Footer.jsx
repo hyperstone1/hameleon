@@ -1,11 +1,12 @@
 import React from 'react';
 import './media.scss';
+import logo from '../../assets/images/logo-removebg.png';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="logo">
-        <img src={require('./logo-removebg-preview.png')} alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
       <div className="info">
         ООО "Неон Хата"

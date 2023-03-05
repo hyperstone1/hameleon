@@ -5,18 +5,16 @@
   .navbar-expand-lg {
     font-family: 'Tilt Prism';
     .container {
-      .navbar-toggler {
-        // position: fixed;
-      }
       .navbar-brand {
         color: white;
-        padding: 7px;
-        background-color: #cb12122e;
-        box-shadow: rgb(204 3 3) 0px 3px 8px;
-        border-radius: 3px;
+        // padding: 7px;
+        // background-color: #cb12122e;
+        // box-shadow: rgb(204 3 3) 0px 3px 8px;
+        // border-radius: 3px;
         .logo {
-          width: 25px;
-          height: 25px;
+          width: 70px;
+          height: 70px;
+          mix-blend-mode: plus-lighter;
         }
       }
       .navbar-collapse {

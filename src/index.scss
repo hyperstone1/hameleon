@@ -17,6 +17,11 @@ body {
     width: 50px;
     height: 50px;
     transition: 0.4s;
+    svg {
+      display: inline-block;
+      width: 80%;
+      height: 80%;
+    }
     &:hover {
       background-color: #313131c0;
     }

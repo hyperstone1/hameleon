@@ -1,20 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import './media.scss';
-import { BsFillTelephoneFill } from 'react-icons/bs';
-import { AiFillInstagram } from 'react-icons/ai';
-import { MdEmail } from 'react-icons/md';
-// import axios from 'axios';
 import Swal from 'sweetalert2';
-// import { host } from '../../constants/constants';
 import Spinner from 'react-bootstrap/Spinner';
 import InputMask from '../InputMask/InputMask';
-
-// type Error = {
-//   name: string;
-//   phone: string;
-//   message: string;
-// };
+import './media.scss';
+// import { BsFillTelephoneFill } from 'react-icons/bs';
+// import { AiFillInstagram } from 'react-icons/ai';
+// import { MdEmail } from 'react-icons/md';
+// import axios from 'axios';
+// import { host } from '../../constants/constants';
 
 const FormApp = () => {
   const [name, setName] = useState('');
@@ -26,13 +20,10 @@ const FormApp = () => {
   const inputPhone = useRef();
 
   const handleChangeInput = (e) => {
-    console.log(e.target.type);
     if (e.target.type === 'text') {
       setName(e.target.value);
     }
-    //  else {
-    //   setPhone(e.target.value);
-    // }
+
     if (errors && !!errors[e.target.type]) {
       setErrors({
         ...errors,
@@ -42,7 +33,6 @@ const FormApp = () => {
   };
 
   const handleChangeTextarea = (e) => {
-    console.log(e.target.type);
     setMessage(e.target.value);
     if (!!errors[e.target.type]) {
       setErrors({
@@ -61,8 +51,6 @@ const FormApp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formErrors = validateForm();
-    console.log('tut');
-    console.log('formErrors: ', formErrors);
     console.log('phone: ', phone);
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
@@ -164,7 +152,7 @@ const FormApp = () => {
             </Button>
           </Form>
         </div>
-        <div className="cards_container">
+        {/* <div className="cards_container">
           <a href="tel:375333333333" className="card phone container">
             <div className="dark"></div>
             <div className="icon">
@@ -196,7 +184,7 @@ const FormApp = () => {
             <div className="title">Эл. адрес</div>
             <div className="text">mail@gmail.com</div>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

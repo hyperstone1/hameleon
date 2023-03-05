@@ -1,12 +1,12 @@
 import React from 'react';
-// import './index.scss';
 import './media.scss';
+import processImg from '../../assets/images/sign-looking-for.jpg';
 
 const Process = () => {
   return (
     <div id="process" className="process">
       <div className="container_process">
-        <img src={require('./sign-looking-for.jpg')} alt="sign" />
+        <img src={processImg} alt="sign" />
         <div className="text">
           <ol>
             <li className="process_item">
