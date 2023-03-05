@@ -23,6 +23,7 @@ const InputMask = ({ phone, setPhone, errors, setErrors, inputPhone }) => {
 
   useEffect(() => {
     handleChange();
+    //eslint-disable-next-line
   }, [phone]);
 
   return (
