@@ -1,6 +1,6 @@
 import React from 'react';
 import './media.scss';
-import processImg from '../../assets/images/sign-looking-for.jpg';
+import processImg from '../../assets/images/process1.png';
 
 const Process = () => {
   return (

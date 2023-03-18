@@ -21,7 +21,7 @@
     .text {
       position: relative;
       color: #ffffff;
-      
+
       &::after {
         content: '';
         position: absolute;
@@ -35,7 +35,9 @@
         display: flex;
         gap: 15px;
         padding-bottom: 40px;
-
+        &:last-child {
+          padding-bottom: 0;
+        }
         .process_number {
           display: flex;
           justify-content: center;
