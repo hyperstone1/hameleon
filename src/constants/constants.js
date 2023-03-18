@@ -1,33 +1,108 @@
 export const imgsWorks = [
   {
-    src: require('../assets/images/works/1.JPG'),
-    title: 'RAI - 45x35 см',
-    url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+    title: 'от 100 до 200',
+    imgs: [
+      {
+        src: require('../assets/images/works/100/1.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/100/2.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/100/3.JPG'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/100/4.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/100/5.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/100/6.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+    ],
   },
   {
-    src: require('../assets/images/works/2.JPG'),
-    title: 'Lucky Pub - 29х43 см',
-    url: 'https://www.instagram.com/p/CbW9tA_MaE-/',
+    title: 'от 200 до 350',
+    imgs: [
+      {
+        src: require('../assets/images/works/200/1.JPG'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/200/2.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/200/3.png'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/200/4.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/200/5.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/200/6.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+    ],
   },
   {
-    src: require('../assets/images/works/3.JPG'),
-    title: 'LA LUNA - 75х75 см',
-    url: 'https://www.instagram.com/p/Cn7MmUlIfLb/',
-  },
-  {
-    src: require('../assets/images/works/4.JPG'),
-    title: 'Надписи для дополнения интерьера клуба "MAO" в г. Брест',
-    url: 'https://www.instagram.com/p/CpAYmwCIX3B/',
-  },
-  {
-    src: require('../assets/images/works/5.JPG'),
-    title: 'LA LUNA - 75х75 см',
-    url: 'https://www.instagram.com/p/Cbe7cl0Mwj2/',
-  },
-  {
-    src: require('../assets/images/works/6.JPG'),
-    title: 'LA LUNA - 75х75 см',
-    url: 'https://www.instagram.com/p/CopmbEaIWj2/',
+    title: 'от 350',
+    imgs: [
+      {
+        src: require('../assets/images/works/350/1.jpeg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/350/2.JPG'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/350/3.JPG'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/350/4.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/350/5.jpg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+      {
+        src: require('../assets/images/works/350/6.jpeg'),
+        title: 'RAI - 45x35 см',
+        url: 'https://www.instagram.com/p/Ckn-5YHoWqp/',
+      },
+    ],
   },
 ];
 
