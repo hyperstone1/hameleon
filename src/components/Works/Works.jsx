@@ -29,7 +29,7 @@ const Works = () => {
         <h1 className="title">Наши работы</h1>
         {imgsWorks.map((item, id) => (
           <div className="works_cards" key={id}>
-            <h2 className="works_title">{item.title}</h2>
+            <h2 className="works_title">{item.title} BYN</h2>
             <div className="cards_container">
               <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
