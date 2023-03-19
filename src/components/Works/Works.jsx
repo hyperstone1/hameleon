@@ -10,18 +10,18 @@ import { useWindowSize } from '../../hooks/useWindowSize';
 
 const Works = () => {
   const [width] = useWindowSize();
-  const [slides, setSlides] = useState();
+  const [slides, setSlides] = useState(0);
   useEffect(() => {
+    if (width > 1120) {
+      setSlides(3);
+    }
     if (width < 1120) {
       setSlides(2);
     }
     if (width < 760) {
       setSlides(1);
     }
-    if (width > 1120) {
-      setSlides(3);
-    }
-  }, [width]);
+  }, [width, slides]);
 
   return (
     <div id="works" className="works">
